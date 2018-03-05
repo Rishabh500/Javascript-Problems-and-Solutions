@@ -119,6 +119,7 @@ function chunkArray(arr,len){
     
     while(i < arr.length){
         chunkedArr.push(arr.splice(i,i+len));
+        i++;
     }
     return chunkedArr;
 }
@@ -148,7 +149,7 @@ function formatStr(str){
                 .join('');                
 }
 
-// CHALLENGE 8: ANAGRAM
+// CHALLENGE 8: 
 // Change every character with next characterand capitalize the vowels
 function letterChanges(str){
     let newStr = str.replace(/a-z/gi,(char) => {
